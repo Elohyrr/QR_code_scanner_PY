@@ -10,7 +10,7 @@ import requests
 import json
 
 # Configuration du webhook Discord
-webhook_url = 'https://discord.com/api/webhooks/1150729103843020862/Bf_Pq02jI_EfrJE9OG8Kb4TK2OYF_jqoh2R4IFoyV3E4px4OP7ubtyNn7dG1Ssxbbu-n'
+webhook_url = os.getenv("DISCORD_WEBHOOK_URL")
 
 def send_to_discord(message):
     data = {
